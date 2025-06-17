@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - TaskTrackr</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .login-container h1 {
+      margin-bottom: 20px;
+    }
+    .login-container input {
+      width: 100%;
+      margin: 8px 0;
+    }
+    .login-container button {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .divider {
+      margin: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Bem-vindo ao TaskTrackr</h1>
+
+    <input type="text" id="usuario" placeholder="Digite seu nome de usuário" />
+    <input type="password" id="senha" placeholder="Digite sua senha" />
+    <button onclick="loginUsuario()">Entrar</button>
+
+    <div class="divider"></div>
+
+    <input type="text" id="novoUsuario" placeholder="Novo usuário" />
+    <input type="password" id="novaSenha" placeholder="Nova senha" />
+    <button onclick="cadastrarUsuario()">Cadastrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

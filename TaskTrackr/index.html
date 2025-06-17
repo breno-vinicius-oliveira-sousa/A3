@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskTrackr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>TaskTrackr</h1>
+
+  <section class="formulario">
+    <input type="text" id="nome" placeholder="Nome da tarefa" />
+    <textarea id="descricao" placeholder="Descrição"></textarea>
+    <select id="prioridade">
+      <option value="Baixa">Baixa</option>
+      <option value="Média">Média</option>
+      <option value="Alta">Alta</option>
+    </select>
+    <button onclick="adicionarTarefa()">Adicionar</button>
+  </section>
+
+  <section class="kanban">
+    <div class="coluna">
+      <h2>A Fazer</h2>
+      <div id="aFazer" class="tarefas"></div>
+    </div>
+    <div class="coluna">
+      <h2>Em Progresso</h2>
+      <div id="emProgresso" class="tarefas"></div>
+    </div>
+    <div class="coluna">
+      <h2>Concluído</h2>
+      <div id="concluido" class="tarefas"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
